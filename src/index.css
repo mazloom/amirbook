@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lalezar&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/shabnam-font@v5.0.2/dist/font-face.css');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/samim-font@v4.0.5/dist/font-face.css');
+@import "tailwindcss";
+
+@theme {
+  --font-vazir: "Vazirmatn", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif-fa: "Amiri", "Vazirmatn", Georgia, Cambria, "Times New Roman", serif;
+  --font-shabnam: "Shabnam", "Vazirmatn", system-ui, sans-serif;
+  --font-sahel: "Sahel", "Vazirmatn", system-ui, sans-serif;
+  --font-samim: "Samim", "Vazirmatn", system-ui, sans-serif;
+  --font-lalezar: "Lalezar", system-ui, sans-serif;
+  --font-amiri: "Amiri", Georgia, serif;
+}
+
+/* Custom class mappings for selected Persian fonts */
+.font-vazir { font-family: "Vazirmatn", system-ui, sans-serif; }
+.font-shabnam { font-family: "Shabnam", "Vazirmatn", system-ui, sans-serif; }
+.font-sahel { font-family: "Sahel", "Vazirmatn", system-ui, sans-serif; }
+.font-samim { font-family: "Samim", "Vazirmatn", system-ui, sans-serif; }
+.font-lalezar { font-family: "Lalezar", system-ui, sans-serif; }
+.font-amiri { font-family: "Amiri", Georgia, serif; }
+
+body {
+  font-family: var(--font-vazir);
+  direction: rtl;
+  text-align: right;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+/* Custom scrollbars for professional layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Print and Preview styles */
+.book-page-shadow {
+  box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08), 0 2px 8px -1px rgba(15, 23, 42, 0.04);
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}

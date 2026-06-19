@@ -1,0 +1,6 @@
+{
+  "name": "Persian Book Publisher Translator",
+  "description": "پلتفرم هوشمند ترجمه کتاب‌های طولانی به همراه ویراستاری ادبی، نیم‌فاصله‌گذاری و صفحه‌بندی آماده چاپ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
